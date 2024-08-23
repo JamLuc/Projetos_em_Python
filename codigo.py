@@ -24,14 +24,14 @@ pyautogui.PAUSE = 0.5
 pyautogui.press('win') ## abrindo windows
 pyautogui.write('edge') ## digitando nome navegador
 pyautogui.press('enter') ## entra no navegador
-pyautogui.write("https://dlp.hashtagtreinamentos.com/python/intensivao/login") # entrar no site
+pyautogui.write("https://osite.com/endereco") # entrar no site
 pyautogui.press("enter")
 
 time.sleep(3)
 
 pyautogui.click(x=743, y=360)
 pyautogui.hotkey("ctrl", "a")       
-pyautogui.write("jamlucas99@hotmail.com")
+pyautogui.write("seuemail@hotmail.com")
 pyautogui.press('tab')
 pyautogui.write("senha")
 pyautogui.press('tab')
@@ -39,7 +39,7 @@ pyautogui.press('enter')
 
 
 import pandas
-tabela = pandas.read_csv("produtos.csv")
+tabela = pandas.read_csv("nomeDoarquivo.csv")
 
 
 print(tabela)
@@ -49,7 +49,7 @@ for linha in tabela.index:
 
     # Cadastrando Produtos
     #codigo
-
+    # Os produtos a seguir são exemplos de como podem ser cadastrados automaticamente.
     pyautogui.click(x=811, y=235)
     codigo = str(tabela.loc[linha, "codigo"])
     pyautogui.write(codigo)
