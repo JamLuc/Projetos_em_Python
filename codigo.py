@@ -38,8 +38,8 @@ pyautogui.press('tab')
 pyautogui.press('enter')
 
 
-import pandas
-tabela = pandas.read_csv("nomeDoarquivo.csv")
+import pandas as pd
+tabela = pd.read_csv("nomeDoarquivo.csv")
 
 
 print(tabela)
